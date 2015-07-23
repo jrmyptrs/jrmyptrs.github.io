@@ -1,0 +1,1 @@
+function scrollTo(o,s){ var d = $(o).offset().top; $("html:not(:animated),body:not(:animated)").animate({ scrollTop: d}, s); }
