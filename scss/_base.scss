@@ -900,12 +900,24 @@ footer.footer {
   }
   #skills-tabs {
     margin-bottom: 20px;
+    background: $lighterGray;
+    padding: 10px 0;
+    border: 0px;
   }
   #skills-tabs li {
     font-size: 12px;
+    border: 0px;
     a {
-      padding: 8px;
-      margin: 0px;
+      color: #c1c1c1;
+      border: 0px;
+      padding: 0 6px;
+    }
+    &.active, &:hover, &:focus {
+      a {
+        border: 0px;
+        color: $black !important;
+        background-color: transparent;
+      }
     }
   }
   .nav-tabs>li>a {
