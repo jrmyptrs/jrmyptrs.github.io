@@ -231,10 +231,6 @@ a {
   top: 8px !important;
   right: 8px !important;
   margin: 0px;
-  @media (min-width: 768px) {
-    top: 20px;
-    right: 20px;
-  }
 }
 .navmenu-brand {
   font-family: $serif;
