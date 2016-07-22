@@ -354,7 +354,7 @@ a {
   font-weight: 900;
   color: white;
   opacity: 0;
-  margin: 12px;
+  margin: 12px 12px 12px 19px;
   padding: 0;
   font-size: 20px;
   visibility: hidden;
@@ -1250,28 +1250,29 @@ footer.footer {
 
   /* line 910, ../scss/_base.scss */
   #skills-tabs li {
-    font-size: 12px;
+    font-size: 13px;
     border: 0px;
   }
   /* line 913, ../scss/_base.scss */
   #skills-tabs li a {
     color: #c1c1c1;
     border: 0px;
-    padding: 0 6px;
+    padding: 0 5px;
+    margin-right: 0px;
   }
-  /* line 919, ../scss/_base.scss */
+  /* line 920, ../scss/_base.scss */
   #skills-tabs li.active a, #skills-tabs li:hover a, #skills-tabs li:focus a {
     border: 0px;
     color: #1a1a1a !important;
     background-color: transparent;
   }
 
-  /* line 926, ../scss/_base.scss */
+  /* line 927, ../scss/_base.scss */
   .nav-tabs > li > a {
     margin-bottom: 7px;
   }
 
-  /* line 929, ../scss/_base.scss */
+  /* line 930, ../scss/_base.scss */
   .nav-tabs > li > a:hover {
     border-color: whitesmoke;
   }
