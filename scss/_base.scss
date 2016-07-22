@@ -358,6 +358,8 @@ p.larger {
   width: 100%;
   text-align: center;
   min-height: 320px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 .service__front,
 .service__back {
@@ -366,7 +368,8 @@ p.larger {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 100 !important;
+  transform-style: preserve-3d;
 }
 .service__front,
 .service__back {
@@ -414,13 +417,15 @@ p.larger {
 .service.effect__click.flipped .service__front {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
-  z-index: 100;
+  z-index: 100 !important;
+  transform-style: preserve-3d;
 }
 
 .service.effect__click.flipped .service__back {
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
-  z-index: 100;
+  z-index: 100 !important;
+  transform-style: preserve-3d;
 }
 .service__text-container {
   display: table;
