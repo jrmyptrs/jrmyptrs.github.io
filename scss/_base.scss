@@ -358,8 +358,6 @@ p.larger {
   width: 100%;
   text-align: center;
   min-height: 320px;
-  transform-style: preserve-3d;
-  perspective: 1000px;
 }
 .service__front,
 .service__back {
@@ -369,7 +367,6 @@ p.larger {
   width: 100%;
   height: 100%;
   z-index: 100 !important;
-  transform-style: preserve-3d;
 }
 .service__front,
 .service__back {
@@ -616,7 +613,7 @@ p.larger {
   border-top: 0px;
   background: $black;
   color: $white;
-  padding: 20px;
+  padding: 0;
   margin: 0px;
   text-align: center;
   -ms-transition: all 0.3s ease-out;
@@ -625,6 +622,7 @@ p.larger {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   .btn-default {
+    padding: 20px;
     display: block;
     width: 100%;
     color: $white;
