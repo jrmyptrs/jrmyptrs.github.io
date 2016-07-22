@@ -787,6 +787,12 @@ p.larger {
   color: $lightGray;
   text-decoration: none;
 }
+#contact p.larger {
+  padding: 0 8%;
+  @media (min-width: 768px) {
+    padding: 0 26%;
+  }
+}
 #contact-intro {
   padding-bottom: 40px;
 }
