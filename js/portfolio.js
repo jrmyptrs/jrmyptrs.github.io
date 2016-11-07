@@ -48,6 +48,10 @@ $(function(){
       $(this).toggleClass('open');
     });
   });
+  $("img.lazy").lazyload({
+      threshold : 200,
+      effect : "fadeIn"
+  });
   // Reusable functions
   function scaleVideoContainer() {
     var height = $(window).height();

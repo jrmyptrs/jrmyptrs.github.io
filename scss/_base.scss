@@ -704,6 +704,23 @@ p.larger {
 .modal-body h4 {
   font-size: 18px;
 }
+.modal-img h4 {
+  font-family: $sansSerif;
+  color: $altGray;
+  font-weight: 300;
+  font-size: 24px;
+  @media (min-width: 769px) {
+    font-size: 26px;
+  }
+}
+.modal-img h5 {
+  font-size: 16px;
+  margin: 20px 0;
+  @media (min-width: 769px) {
+    margin: 40px 0;
+    font-size: 18px;
+  }
+}
 .modal-footer {
   border-top: 0px;
   background: $black;
