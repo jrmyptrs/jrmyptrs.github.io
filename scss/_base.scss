@@ -721,6 +721,10 @@ p.larger {
     font-size: 18px;
   }
 }
+.modal-img .lazy {
+  opacity: 0;
+  transition: opacity .3s ease-in;
+}
 .modal-footer {
   border-top: 0px;
   background: $black;
