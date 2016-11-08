@@ -281,6 +281,9 @@ a {
   height: 4px;*/
   transition: all 0.3s;
 }
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: $white;
+}
 /*.navbar-toggle .icon-bar+.icon-bar {
   margin-top: 6px;
 }*/
