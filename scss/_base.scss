@@ -201,11 +201,15 @@ hr {
   border-top: 1px solid $black;
 }
 a {
+  color: $mediumGray;
   -ms-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+a:hover {
+  color: $darkGray;
 }
 .rwd-line {
   display: inline;
@@ -487,8 +491,8 @@ p.larger {
   transition: all 0.3s ease-out;
   &:hover {
     color: $white;
-    border: 3px solid $mediumGray;
-    background: $mediumGray;
+    border: 3px solid $darkGray;
+    background: $darkGray;
   }
 }
 .service__back {
@@ -652,6 +656,15 @@ p.larger {
   padding: 0 5%;
   @media (max-width: 479px) {
     display: none;
+  }
+}
+.work-sample {
+  .modal {
+    h4 {
+      @media (max-width: 479px) {
+        display: block !important;
+      }
+    }
   }
 }
 .work-sample p {
