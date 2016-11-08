@@ -48,11 +48,6 @@ $(function(){
       $(this).toggleClass('open');
     });
   });
-  $("img.lazy").unveil(200, function() {
-    $(this).load(function() {
-      this.style.opacity = 1;
-    });
-  });
   // Reusable functions
   function scaleVideoContainer() {
     var height = $(window).height();
