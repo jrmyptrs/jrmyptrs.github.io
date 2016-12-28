@@ -423,15 +423,18 @@ p.larger {
   padding-top: 80px;
   padding-bottom: 80px;
   h2 {
+    margin-bottom: 20px;
     @media (min-width: 768px) {
       font-size: 42px;
       margin-bottom: 40px;
-      padding: 0 14%;
+      padding: 0 13%;
     }
   }
   .lead {
-    max-width: 90%;
     margin: 0px auto 20px auto;
+    @media (min-width: 768px) {
+      max-width: 80%;
+    }
   }
 }
 #resume-cta {
@@ -478,11 +481,22 @@ p.larger {
   transition: transform 0.3s;
 }
 .service__front {
-  border: 3px solid $mediumGray;
-  color: $mediumGray;
+  border: 3px solid $black;
+  color: $black;
   background: transparent;
   h3 {
     margin: 0px;
+  }
+  svg {
+    fill: $black;
+    display: block;
+    margin: 0px auto;
+    -ms-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin-bottom: 12px;
   }
   -ms-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -491,8 +505,11 @@ p.larger {
   transition: all 0.3s ease-out;
   &:hover {
     color: $white;
-    border: 3px solid $darkGray;
-    background: $darkGray;
+    border: 3px solid $black;
+    background: $black;
+    svg {
+      fill: $white;
+    }
   }
 }
 .service__back {
@@ -547,6 +564,23 @@ p.larger {
       font-family: $sansSerif;
       font-weight: 100;
       font-size: 19px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 10px 0;
+        font-size: 13px;
+        line-height: 1.1;
+        &:first-child {
+          border-top: 0px;
+        }
+      }
+    }
+    .service__cta {
+      margin-top: 10px;
+      border: 2px solid $black;
+      color: $black;
     }
   }
 }
