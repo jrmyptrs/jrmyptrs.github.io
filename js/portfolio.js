@@ -40,12 +40,20 @@ $(function(){
       var $anchor = $(this);
       $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top
-      }, '1800');
+      }, 1800);
       $('#toggle').toggleClass('open');
       event.preventDefault();
     });
     $('#toggle').click(function(){
       $(this).toggleClass('open');
+    });
+    var $root = $('html, body');
+    $('a.scroll-to').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 900);
+        return false;
     });
   });
   // Reusable functions

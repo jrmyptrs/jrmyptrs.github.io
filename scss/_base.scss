@@ -406,7 +406,7 @@ p.larger {
   position: absolute;
   bottom: 0;
   left: 50%;
-  z-index: 101;
+  z-index: 9999;
   margin-left: -45px;  
   height:45px;
   width:90px;
@@ -450,6 +450,14 @@ p.larger {
   text-align: center;
   cursor: pointer;
   padding-top: 1px;
+  @media (max-width: 480px) {
+    max-width: 320px;
+    margin: 0px auto;
+  }
+  @media (max-width: 767px) {
+    max-width: 375px;
+    margin: 0px auto;
+  }
 }
 #services h2 {
   margin-top: 0px;
@@ -739,6 +747,7 @@ p.larger {
 .modal-content {
   color: $black;
   border-radius: 0px;
+  box-shadow: none;
   border: 0px;
 }
 .modal-content a {
@@ -776,10 +785,9 @@ p.larger {
   transition: opacity .3s ease-in;
 }
 .modal-footer {
-  border-top: 0px;
-  background: $black;
-  color: $white;
-  padding: 0;
+  background: $white;
+  color: $black;
+  padding: 20px;
   margin: 0px;
   text-align: center;
   -ms-transition: all 0.3s ease-out;
@@ -791,14 +799,11 @@ p.larger {
     padding: 20px;
     display: block;
     width: 100%;
-    color: $white;
     font-size: 18px;
     font-weight: 100;
-    border: 0px !important;
-    background: transparent !important;
   }
   &:hover {
-    background: $mediumGray;
+    background: $white;
   }
 }
 #about {
