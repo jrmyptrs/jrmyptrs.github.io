@@ -786,6 +786,7 @@ p.larger {
 }
 .modal-footer {
   background: $white;
+  border-top: 0px;
   color: $black;
   padding: 20px;
   margin: 0px;
@@ -801,6 +802,7 @@ p.larger {
     width: 100%;
     font-size: 18px;
     font-weight: 100;
+    font-weight: 700;
   }
   &:hover {
     background: $white;
