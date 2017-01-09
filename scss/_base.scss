@@ -458,10 +458,10 @@ p.larger {
     max-width: 375px;
     margin: 0px auto;
   }
-}
-#services h2 {
-  margin-top: 0px;
-  margin-bottom: 40px;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 }
 .service {
   margin: 20px auto;
@@ -841,6 +841,10 @@ p.larger {
   p {
     margin-top: 10px;
     padding: 0 4%;
+    font-size: 14px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
   }
   &:hover {
     transform: scale(1.15,1.15);
