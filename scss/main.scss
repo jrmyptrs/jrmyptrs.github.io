@@ -283,6 +283,16 @@ body {
   }
 }
 
+.pattern {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0.5;
+  bottom: 0;
+  background-image: url(https://cdnjs.cloudflare.com/ajax/libs/vegas/2.3.1/overlays/03.png);
+  z-index: 1;
+}
+
 .hoverable {
   padding: 3px 2px;
   transition: all 0.4s linear;
@@ -312,6 +322,24 @@ body {
    50% { transform: rotate(10.0deg) }
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
+}
+
+.email-link {
+  position: relative;
+  &.clicked {
+    &:after {
+      content: 'email copied to clipboard';
+      font-size: 12px;
+      font-weight: 700;
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -8px;
+      text-align: center;
+      color: blue;
+    }
+  }
 }
 
 .jp-grid {
