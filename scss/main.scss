@@ -169,8 +169,17 @@ body {
   p {
     font-size: 24px;
     color: #888888;
+    margin: 1.5em 0;
   }
-  @media (min-width: 550px) {
+  @media (min-width: 375px) {
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 26px;
+    }
+  }
+  @media (min-width: 600px) {
     width: 78%;
     h1 {
       font-size: 46px;
@@ -181,13 +190,14 @@ body {
   }
   @media (min-width: $tablet-portrait){
     width: 62.5%;
-    margin: 18.75vw auto;
+    margin: 14vw auto;
     max-width: 1050px;
     h1 {
       font-size: 56px;
     }
     p {
       font-size: 46px;
+      margin: 1.35em 0;
     }
   }
   @media (min-width: $ipad) {
