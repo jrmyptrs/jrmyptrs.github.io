@@ -281,6 +281,23 @@ body {
   &.playing {
     opacity: 1;
   }
+  .jp-bgvideo__credit {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    padding: 5px 10px;
+    font-size: 12px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    line-height: 1.5;
+    z-index: 100;
+    display: none;
+    text-align: right;
+    @media (min-width: $tablet-portrait) {
+      font-size: 13px;
+    }
+  }
 }
 
 .pattern {
@@ -326,20 +343,6 @@ body {
 
 .email-link {
   position: relative;
-  &.clicked {
-    &:after {
-      content: 'email copied to clipboard';
-      font-size: 12px;
-      font-weight: 700;
-      position: absolute;
-      width: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -8px;
-      text-align: center;
-      color: blue;
-    }
-  }
 }
 
 .jp-grid {
